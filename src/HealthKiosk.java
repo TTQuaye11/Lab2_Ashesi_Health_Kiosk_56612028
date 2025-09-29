@@ -80,7 +80,7 @@ public class HealthKiosk {
         char shiftedLetter = (char)('A' + (baseCode - 'A' + 2) % 26);
         System.out.println("Shifted letter: " + shiftedLetter);
         String lastTwo = id.substring(3,4);
-        System.out.println("Last two characters for ID: " + lastTwo);
+        System.out.println("Last two characters for ID: " + lastTwo);;
 
 
 
