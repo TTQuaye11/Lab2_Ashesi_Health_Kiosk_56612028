@@ -91,7 +91,7 @@ public class HealthKiosk {
         } else if (healthMetric == 2) {
             System.out.println("Display code: " + shiftedLetter + lastTwo + "-" + tablets);
         } else if (healthMetric == 3) {
-                System.out.println("Display code: " + shiftedLetter + lastTwo + "-" + (int)(sinAngle*100));
+                System.out.println("Display code: " + shiftedLetter + lastTwo + "-" + (int)(sinAngle*100));;
         }
 
 
