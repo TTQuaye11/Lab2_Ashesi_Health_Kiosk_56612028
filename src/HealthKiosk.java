@@ -58,11 +58,32 @@ public class HealthKiosk {
 
         if (id.length() == 5 ){
             if (Character.isLetter(id.charAt(0))){
-                if (Character.isDigit(id.charAt(1))){
-
+                if (Character.isDigit(id.charAt(1)) && Character.isDigit(id.charAt(2)) && Character.isDigit(id.charAt(3)) && Character.isDigit(id.charAt(4))) {
+                    System.out.println("ID OK");
                 }
+                else{
+                     System.out.print("Last 4 character must be digits.");
+                    }
+            }
+            else{
+                System.out.println("Fist character must be a letter");
             }
         }
+        else {
+            System.out.print("Invalid length.");
+        }
+
+        System.out.println("Enter your first name: ");
+        String firstName = input.next();
+        char baseCode = Character.toUpperCase(firstName.charAt(0));
+        System.out.println("Base code: "+ baseCode);
+        char shiftedLetter = (char)('A' + (baseCode - 'A' + 2) % 26);
+        System.out.println("Shifted letter: " + shiftedLetter);
+        String lastTwo = id.substring(3,4);
+        System.out.println("Last two characters for ID: " + lastTwo);
+
+
+
 
     }
 }
